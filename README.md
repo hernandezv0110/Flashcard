@@ -1,20 +1,16 @@
 # Flashcard
 
-## NAME_OF_YOUR_APP_HERE
-
+## Flashcards
 📝 `NOTE:` Paste the README templates for each subsequent lab here at the top, (i.e. lab 2, 3, 4). This will show a history of your development process including which users stories you completed and how your app looked and functioned at each step.
 
 ## Lab 1
 
 ### App Description
-`TODO://` Add app description
+Currently, flashcard app displays a flashcard containing one specific question with three answer choices to choose from. If the user clicks on the correct choice, the question will flip and show the correct answer on the flashcard. If the user clicks on an incorrect choice, the choice will hide itself, leaving the other choices as possible options. 
 
 ### App Walk-though
-`TODO://` Add the URL to your animated app walk-though `gif` in the image tag below. Make sure the gif actually renders and animates when viewing this README. (☝️ Remove this paragraph after after adding gif)
 
-<img src="YOUR_GIF_URL_HERE" width=200><br>
-
-`TODO://` In the User stories section below, add an `x` between the `-[ ]` like this `- [x]` for any user story you complete. (☝️ Remove this paragraph after after checking off user stories)
+<img src="https://i.imgur.com/v8WZRQu.gif" width=200><br>
 
 ## Required
 - [x] Create New Project in Xcode
