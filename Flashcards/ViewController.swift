@@ -74,8 +74,34 @@ class ViewController: UIViewController {
         btnOptionThree.isHidden = true
     }
     
+    func updateFlashCard(question: String, answer: String, extraAnswerOne: String, extraAnswerTwo: String){
+        //Write stuff here
+        questionLabel.text = question
+        answerLabel.text = answer
+        btnOptionOne.setTitle(extraAnswerOne, for: .normal)
+        btnOptionTwo.setTitle(answer, for: .normal)
+        btnOptionThree.setTitle(extraAnswerTwo, for: .normal)
+        btnOptionOne.isHidden = false
+        btnOptionTwo.isHidden = false
+        btnOptionThree.isHidden = false
+        answerLabel.isHidden = true
+        questionLabel.isHidden = false
+    }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let navigationController = segue.destination as! UINavigationController
+        let creationController = navigationController.topViewController as! CreationViewController
+        creationController.flashcardsController = self
+        if segue.identifier == "EditSegue" {
+            creationController.initialQuestion = questionLabel.text
+            creationController.initialAnswer = answerLabel.text
+            creationController.initialExtraAnswer1 = btnOptionOne.titleLabel!.text
+            creationController.initialExtraAnswer2 = btnOptionThree.titleLabel!.text
+        }
+        
+        
+        
+    }
     
 }
 
