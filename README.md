@@ -9,7 +9,7 @@ Currently, flashcard app is able to create/edit flashcards and save them to the 
 
 ### App Walk-though
 
-<img src="https://i.imgur.com/J2t34eH.gif" width=200><br>
+<img src="https://i.imgur.com/NWRjmBk.gif" width=200><br>
 
 ## Required
 - [x] User can browse through multiple flashcards
