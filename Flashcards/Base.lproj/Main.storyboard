@@ -37,9 +37,19 @@
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6kw-sS-WcE">
-                                        <rect key="frame" x="323" y="250" width="26" height="31"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIB-d4-bHA">
+                                        <rect key="frame" x="8" y="8" width="30" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <state key="normal" title="❌"/>
+                                        <connections>
+                                            <action selector="didTapDelete:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gzJ-Pp-xvd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6kw-sS-WcE">
+                                        <rect key="frame" x="340" y="250" width="26" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <state key="normal" title="✏️"/>
                                         <connections>
                                             <segue destination="4DR-vA-fdc" kind="presentation" identifier="EditSegue" id="OCL-AA-h43"/>
@@ -76,8 +86,26 @@
                                     <action selector="didTapOptionTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QfR-VX-rw0"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64k-bh-Upq">
+                                <rect key="frame" x="354" y="807" width="40" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="didTapNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rrL-N8-nlJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nd-lv-Rmv">
+                                <rect key="frame" x="20" y="807" width="38" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Prev"/>
+                                <connections>
+                                    <action selector="didTapPrev:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NBM-J5-soi"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IL5-jw-SGe">
-                                <rect key="frame" x="192" y="796" width="30" height="46"/>
+                                <rect key="frame" x="192" y="801" width="30" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="+"/>
@@ -95,6 +123,8 @@
                         <outlet property="btnOptionThree" destination="Ie9-pq-vXA" id="OWu-0S-hel"/>
                         <outlet property="btnOptionTwo" destination="JJy-qF-3BU" id="4qZ-HZ-CIZ"/>
                         <outlet property="card" destination="0cx-Se-ioC" id="Ejn-C2-XOE"/>
+                        <outlet property="nextButton" destination="64k-bh-Upq" id="XCe-o4-Smu"/>
+                        <outlet property="prevButton" destination="6nd-lv-Rmv" id="1rn-0S-XeA"/>
                         <outlet property="questionLabel" destination="NAF-zv-gVb" id="AJp-vv-ohh"/>
                     </connections>
                 </viewController>

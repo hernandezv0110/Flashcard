@@ -2,6 +2,24 @@
 
 ## Flashcards
 
+## Lab 3
+
+### App Description
+Currently, flashcard app is able to create/edit flashcards and save them to the disk so that flashcards can be saved when the user closes the app. Flashcard app also reads from the disk to display the flashcards that were saved before the user last closed the app. The user is able to browse through multiple flashcards and also has the ability to delete any flashcard they don't need anymore.
+
+### App Walk-though
+
+<img src="https://i.imgur.com/J2t34eH.gif" width=200><br>
+
+## Required
+- [x] User can browse through multiple flashcards
+- [x] User can re-open the app and see previously created flashcards
+- [x] Push code to GitHub
+## Optional
+- [x] User can delete a flashcard
+- [x] User can edit existing flashcard
+- [x] User can store multiple choice questions
+
 ## Lab 2
 
 ### App Description
